@@ -1,55 +1,64 @@
 import "./App.css";
 import { useState } from "react";
-import { Products } from "./components/Products-component";
-// import "./App.css";
-// import { useState } from "react";
-// import { Product } from "./components/Products-component";
+// import { Products } from "./components/Products-component";
 
-export const App = () => {
-  const [products, setProducts] = useState([
-    { title: "react js", price: "$99", d: "15%" },
-    { title: "vue js", price: "$89", d: "15%" },
-    { title: "JavaScript", price: "$79", d: "15%" },
-  ]);
-  const clickHandler = () => {
-    setProducts([
-      { title: "react js", price: "$59", d: "12%" },
-      { title: "vue js", price: "$49", d: "10%" },
-      { title: "JavaScript", price: "$39", d: "5%" },
-    ]);
-  };
-  return (
-    <div>
-      {products.map((e) => {
-        return <Products name={e.title} gheymat={e.price} takhfif={e.d} />;
-      })}
-
-      <button onClick={clickHandler}>change the price</button>
-    </div>
-  );
-};
 // const App = () => {
 //   const [products, setProducts] = useState([
-//     { title: "react js", price: "$99" },
-//     { title: "vue js", proce: "$89" },
-//     { title: "JavaScript", price: "$79" },
+//     { title: "react js", price: "$99", d: "15%" },
+//     { title: "vue js", price: "$89", d: "15%" },
+//     { title: "JavaScript", price: "$79", d: "15%" },
 //   ]);
-
 //   const clickHandler = () => {
 //     setProducts([
-//       { title: "react js", price: "$59" },
-//       { title: "vue js", proce: "$49" },
-//       { title: "JavaScript", price: "$39" },
+//       { title: "react js", price: "$59", d: "12%" },
+//       { title: "vue js", price: "$49", d: "10%" },
+//       { title: "JavaScript", price: "$39", d: "5%" },
 //     ]);
 //   };
 //   return (
-//     <div className="App">
-//       {products.map((e) => (
-//         <Product name={e.title} gheymat={e.price} />
-//       ))}
-//       <button onClick={clickHandler}>change price</button>
+//     <div>
+//       {products.map((e) => {
+//         return <Products name={e.title} gheymat={e.price} takhfif={e.d} />;
+//       })}
+
+//       <button onClick={clickHandler}>change the price</button>
 //     </div>
 //   );
 // };
+
+const App = () => {
+  const [counter, setCounter] = useState(0);
+
+  const plus = () => {
+    // setCounter(counter + 1);
+    setCounter((prevCount) => prevCount + 1);
+  };
+
+  const plus2 = () => {
+    // setCounter(counter + 2);
+    setCounter((prevCount) => prevCount + 2);
+  };
+
+  const plus3 = () => {
+    // setCounter(counter + 3);
+    for (let i = 0; i < 3; i++) {
+      // setCounter(counter + 3);
+      setCounter((prevCount) => prevCount + 1);
+    }
+  };
+
+  return (
+    <div>
+      {/* {counter.map((e) => (
+        <Products name={e.title} counter={e.counter} />
+      ))} */}
+      <p>count - {counter}</p>
+      <button onClick={plus}>add one</button>
+      <button onClick={plus2}>add 2</button>
+      <button onClick={plus3}>add 3</button>
+      <button onClick={() => setCounter(counter + 5)}>add 5</button>
+    </div>
+  );
+};
 
 export default App;
