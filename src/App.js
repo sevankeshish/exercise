@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 // import { Products } from "./components/Products-component";
+import CounterClass from "./components/ClassCounter/ClassCounter";
 
 // const App = () => {
 //   const [products, setProducts] = useState([
@@ -25,38 +26,48 @@ import { useState } from "react";
 //     </div>
 //   );
 // };
+////////////////////////////////////////////////////////////////////////////
+// const App = () => {
+//   const [counter, setCounter] = useState(0);
 
+//   const plus = () => {
+//     // setCounter(counter + 1);
+//     setCounter((prevCount) => prevCount + 1);
+//   };
+
+//   const plus2 = () => {
+//     // setCounter(counter + 2);
+//     setCounter((prevCount) => prevCount + 2);
+//   };
+
+//   const plus3 = () => {
+//     // setCounter(counter + 3);
+//     for (let i = 0; i < 3; i++) {
+//       // setCounter(counter + 3);
+//       setCounter((prevCount) => prevCount + 1);
+//     }
+//   };
+
+//   return (
+//     <div>
+//       {/* {counter.map((e) => (
+//         <Products name={e.title} counter={e.counter} />
+//       ))} */}
+//       <p>count - {counter}</p>
+//       <button onClick={plus}>add one</button>
+//       <button onClick={plus2}>add 2</button>
+//       <button onClick={plus3}>add 3</button>
+//       <button onClick={() => setCounter(counter + 5)}>add 5</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+//////////////////////////////////////////////////////////////////////////
 const App = () => {
-  const [counter, setCounter] = useState(0);
-
-  const plus = () => {
-    // setCounter(counter + 1);
-    setCounter((prevCount) => prevCount + 1);
-  };
-
-  const plus2 = () => {
-    // setCounter(counter + 2);
-    setCounter((prevCount) => prevCount + 2);
-  };
-
-  const plus3 = () => {
-    // setCounter(counter + 3);
-    for (let i = 0; i < 3; i++) {
-      // setCounter(counter + 3);
-      setCounter((prevCount) => prevCount + 1);
-    }
-  };
-
   return (
     <div>
-      {/* {counter.map((e) => (
-        <Products name={e.title} counter={e.counter} />
-      ))} */}
-      <p>count - {counter}</p>
-      <button onClick={plus}>add one</button>
-      <button onClick={plus2}>add 2</button>
-      <button onClick={plus3}>add 3</button>
-      <button onClick={() => setCounter(counter + 5)}>add 5</button>
+      <CounterClass />
     </div>
   );
 };
