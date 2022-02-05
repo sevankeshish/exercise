@@ -2,6 +2,8 @@ import "./App.css";
 import { useState } from "react";
 // import { Products } from "./components/Products-component";
 import CounterClass from "./components/ClassCounter/ClassCounter";
+import { Products } from "./components/Products-component";
+import { HookObject } from "./components/HookUpdateObject/HookObjectUpdate";
 
 // const App = () => {
 //   const [products, setProducts] = useState([
@@ -10,11 +12,17 @@ import CounterClass from "./components/ClassCounter/ClassCounter";
 //     { title: "JavaScript", price: "$79", d: "15%" },
 //   ]);
 //   const clickHandler = () => {
-//     setProducts([
-//       { title: "react js", price: "$59", d: "12%" },
-//       { title: "vue js", price: "$49", d: "10%" },
-//       { title: "JavaScript", price: "$39", d: "5%" },
-//     ]);
+
+/////////////////////////////////////////////////////////
+// const x = products.price
+//  const y = x ==20%
+///////////////////////////////////////////////////////////
+
+// setProducts([
+//   { title: "react js", price:y, d: "12%" },
+//   { title: "vue js", price: "$49", d: "10%" },
+//   { title: "JavaScript", price: "$39", d: "5%" },
+// ]);
 //   };
 //   return (
 //     <div>
@@ -64,10 +72,20 @@ import CounterClass from "./components/ClassCounter/ClassCounter";
 
 // export default App;
 //////////////////////////////////////////////////////////////////////////
+// const App = () => {
+//   return (
+//     <div>
+//       <CounterClass />
+//     </div>
+//   );
+// };
+
+// export default App;
+///////////////////////////////////////////////////////////////////+const App = () => {
 const App = () => {
   return (
     <div>
-      <CounterClass />
+      <HookObject />
     </div>
   );
 };
