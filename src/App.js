@@ -4,6 +4,7 @@ import { useState } from "react";
 import CounterClass from "./components/ClassCounter/ClassCounter";
 import { Products } from "./components/Products-component";
 import { HookObject } from "./components/HookUpdateObject/HookObjectUpdate";
+import { HooksUpdateArray } from "./components/HooksUpdateArray/hooksUpdateArray";
 
 // const App = () => {
 //   const [products, setProducts] = useState([
@@ -71,7 +72,7 @@ import { HookObject } from "./components/HookUpdateObject/HookObjectUpdate";
 // };
 
 // export default App;
-//////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 // const App = () => {
 //   return (
 //     <div>
@@ -81,11 +82,21 @@ import { HookObject } from "./components/HookUpdateObject/HookObjectUpdate";
 // };
 
 // export default App;
-///////////////////////////////////////////////////////////////////+const App = () => {
+///////////////////////////////////////////////////////////////////////////////
+// const App = () => {
+//   return (
+//     <div>
+//       <HookObject />
+//     </div>
+//   );
+// };
+
+// export default App;
+//////////////////////////////////////////////////////////////////////////////////////
 const App = () => {
   return (
     <div>
-      <HookObject />
+      <HooksUpdateArray />
     </div>
   );
 };
