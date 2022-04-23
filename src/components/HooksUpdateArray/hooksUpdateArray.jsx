@@ -11,7 +11,7 @@ export const HooksUpdateArray = () => {
     // ]);
     const addedItem = {
       id: item.length,
-      number: Math.floor(Math.random() * 10),
+      number: Math.floor(Math.random() * 100),
     };
     // console.log({ addedItem }, "hi");
 
